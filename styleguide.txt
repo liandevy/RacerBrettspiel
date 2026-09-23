@@ -1,0 +1,12 @@
+1. Formatierung vom Code
+
+Wenn der Code fertig geschrieben ist, automatische Korrektur Reformat durchführen
+
+2. Formulieren einer Konstanten
+
+Immer groß schreiben und bei mehreren Wörtern mit "_" und ohne "Lehrzeichen"
+
+3. Formulieren einer Variable
+
+Immer im lowerCamelCase geschrieben
+
