@@ -5,12 +5,15 @@ Wenn der Code fertig geschrieben ist, automatische Korrektur Reformat durchführ
 2. Formulieren einer Konstanten
 
 Immer großschreiben und bei mehreren Wörtern mit "_" und ohne "Leerzeichen"
+Aussagekräftige Namen verwenden
+Unnötige Länge vermeiden
 
 3. Formulieren einer Variable
 
 Immer im lowerCamelCase geschrieben
 Variablen möglichts nah an ihrer verwendung Formulieren
-Keine unnötig Globale variablen verwenden
+Aussagekräftige Namen verwenden
+Unnötige Länge vermeiden
 
 4. Maximale Zeichen pro Zeile
 
@@ -23,13 +26,15 @@ Kommentare erklären das warum, nicht das was
 
 6. Formulierung Methoden
 
-UpperCamelCase
+lowerCamelCase
 Aussagekräftige Namen verwenden
 Unnötige Länge vermeiden
 
 7. Formulierung Klassen
 
-PascalCase
+UpperCamelCase
+Aussagekräftige Namen verwenden
+Unnötige Länge vermeiden
 
 8. Packages
 
