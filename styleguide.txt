@@ -1,0 +1,53 @@
+1. Formatierung vom Code
+
+Wenn der Code fertig geschrieben ist, automatische Korrektur Reformat durchführen
+
+2. Formulieren einer Konstanten
+
+Immer großschreiben und bei mehreren Wörtern mit "_" und ohne "Leerzeichen"
+
+3. Formulieren einer Variable
+
+Immer im lowerCamelCase geschrieben
+Variablen möglichts nah an ihrer verwendung Formulieren
+Keine unnötig Globale variablen verwenden
+
+4. Maximale Zeichen pro Zeile
+
+Es dürfen maximal 160 Zeichen pro Zeile verwendet werden
+
+5. Kommentare
+
+Kommentare werden in Deutsch oder Englisch verfasst werden in Form von JavaDoc
+Kommentare erklären das warum, nicht das was
+
+6. Formulierung Methoden
+
+UpperCamelCase
+Aussagekräftige Namen verwenden
+Unnötige Länge vermeiden
+
+7. Formulierung Klassen
+
+PascalCase
+
+8. Packages
+
+in Kleinbuchstaben
+
+9. Imports
+
+nicht verwendete Imports entfernen
+
+10. Fehlermeldungen
+
+Fehlermeldungen sollen Aussagekräftig sein
+
+11. Objektorientierung
+
+möglichst wenig Public verwenden
+
+12. Branchnamen
+
+Eindeutige Branchnamen verwenden
+
