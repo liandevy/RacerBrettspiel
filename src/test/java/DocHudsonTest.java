@@ -6,7 +6,7 @@ class DocHudsonTest {
     private DocHudson auto = new DocHudson();
 
     @Test
-    void  resultsCanNotBeNegative() {
+    void resultsCanNotBeNegative() {
         for (int i = 0;i < 10000; i++){
            assertTrue(auto.fahreRunde()>=0);
         }
