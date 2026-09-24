@@ -1,4 +1,4 @@
-import com.academy.DocHutson;
+import com.academy.DocHudson;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
