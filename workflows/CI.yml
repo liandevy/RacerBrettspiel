@@ -1,0 +1,20 @@
+name: Java CI mit Gradle
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Java 21 einrichten
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Gradle Build & Test
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          arguments: test
