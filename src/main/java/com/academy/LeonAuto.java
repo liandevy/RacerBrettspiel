@@ -1,7 +1,7 @@
 package com.academy;
 
 public class LeonAuto implements Auto{
-    private static final int DEFAULT_BONUS = 0;
+    private static final int DEFAULT_BONUS = 4;
 
     private final int bonus;
 
