@@ -1,6 +1,8 @@
-package com.academy;
+package com.academy.autos;
 
-public class LeonAuto implements Auto{
+import com.academy.RandomService;
+
+public class LeonAuto implements Auto {
     private static final int DEFAULT_BONUS = 0;
 
     private final int bonus;

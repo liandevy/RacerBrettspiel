@@ -1,4 +1,6 @@
-package com.academy;
+package com.academy.autos;
+
+import com.academy.RandomService;
 
 public class YassirAuto implements Auto {
 

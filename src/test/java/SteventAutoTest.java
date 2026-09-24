@@ -1,4 +1,4 @@
-import com.academy.SteventAuto;
+import com.academy.autos.SteventAuto;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

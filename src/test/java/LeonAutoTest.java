@@ -1,4 +1,4 @@
-import com.academy.LeonAuto;
+import com.academy.autos.LeonAuto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

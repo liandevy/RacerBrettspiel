@@ -1,4 +1,4 @@
-import com.academy.NickAuto;
+import com.academy.autos.NickAuto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
