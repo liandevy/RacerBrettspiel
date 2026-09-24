@@ -8,4 +8,4 @@ class MockTest {
         assertEquals(8, 4 * 3, "Math not mathing");
     }
 
-}
+
