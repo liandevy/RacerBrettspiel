@@ -1,4 +1,4 @@
-package com.academy;
+package com.academy.autos;
 
 public interface Auto {
     /**

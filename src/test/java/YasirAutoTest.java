@@ -1,4 +1,4 @@
-import com.academy.YassirAuto;
+import com.academy.autos.YassirAuto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

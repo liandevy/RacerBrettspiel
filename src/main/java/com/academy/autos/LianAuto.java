@@ -1,4 +1,6 @@
-package com.academy;
+package com.academy.autos;
+
+import com.academy.RandomService;
 
 public class LianAuto implements Auto {
     private int runden = 0;
@@ -10,7 +12,7 @@ public class LianAuto implements Auto {
             // Dice rolled when prime number of rounds
             return RandomService.rangeInclusive(4, 10);
         // Default dice rolled
-        return RandomService.rangeInclusive(1, 3);
+        return RandomService.rangeInclusive(1, 6);
     }
 
     private boolean isPrime(final int n) {

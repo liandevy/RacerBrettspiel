@@ -1,6 +1,8 @@
 package com.academy;
 
 
+import com.academy.autos.Auto;
+
 public class Rennen {
     private final int laenge;
     private final int[] positionen;
@@ -24,8 +26,9 @@ public class Rennen {
      * Runs the race and prints the winner by their class name
      * after finishing.
      * Cars declared earlier in the array will have an advantage over
+     * @return winner
      */
-    public void start() {
+    public Auto start() {
         while (true) {
             for (int i = 0; i < autos.length; i++) {
                 if (autos[i] == null)
@@ -35,8 +38,7 @@ public class Rennen {
                 positionen[i] = Math.min(positionen[i] + gefahren, laenge);
 
                 if (positionen[i] >= laenge) {
-                    System.out.println("Gewonnen hat: " + autos[i].getClass().getSimpleName());
-                    return;
+                    return autos[i];
                 }
             }
         }

@@ -1,4 +1,6 @@
-package com.academy;
+package com.academy.autos;
+
+import com.academy.RandomService;
 
 public class SteventAuto implements Auto {
     private static final int MIN_BEWEGUNG = 3;

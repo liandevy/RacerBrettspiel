@@ -1,4 +1,4 @@
-import com.academy.GianisAuto;
+import com.academy.autos.GianisAuto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
