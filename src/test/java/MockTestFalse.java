@@ -5,7 +5,7 @@ class MockTestFalse {
 
     @Test
     void mul2Numbers() {
-        assertEquals(8, 4 * 3, "Math not mathing");
+        assertEquals(8, 4 * 2, "Math not mathing");
     }
 }
 
