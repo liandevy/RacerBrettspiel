@@ -1,7 +1,7 @@
 package com.academy;
 
 public class LeonAuto implements Auto{
-    private static final int DEFAULT_BONUS = 4;
+    private static final int DEFAULT_BONUS = 0;
 
     private final int bonus;
 
@@ -15,10 +15,10 @@ public class LeonAuto implements Auto{
 
     @Override
     public int fahreRunde() {
-        return RandomService.rangeInclusive(1, 4) + bonus;
-    }
-
-    public int getBonus(){
-        return bonus;
+        int distanz = 0;
+        for(int i = 0; i < 2; i++){
+            distanz += RandomService.rangeInclusive(1, 4);
+        }
+        return distanz + bonus;
     }
 }
