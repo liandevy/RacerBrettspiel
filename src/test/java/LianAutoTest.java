@@ -15,8 +15,8 @@ class LianAutoTest {
     }
 
     @Test
-    void resultHitsEveryNumberBetween1And10() {
-        final var hit = new boolean[10];
+    void resultHitsEveryNumberBetween1And12() {
+        final var hit = new boolean[12];
 
         for (int i = 0; i < 10_000; i++) {
             final var result = auto.fahreRunde();

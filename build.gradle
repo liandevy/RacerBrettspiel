@@ -1,9 +1,29 @@
 plugins {
     id 'java'
+    id 'checkstyle'
+}
+
+checkstyle {
+    toolVersion = '10.15.0'
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 group = 'com.academy'
 version = '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.academy.Main'
+        )
+    }
+}
 
 repositories {
     mavenCentral()
