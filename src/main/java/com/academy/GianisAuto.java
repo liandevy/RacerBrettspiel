@@ -5,7 +5,7 @@ public class GianisAuto implements Auto{
     @Override
     public int fahreRunde() {
 
-        int wuerfel1 = RandomService.rangeInclusive(1, 15);
+        int wuerfel1 = RandomService.rangeInclusive(1, 14);
 
         return wuerfel1;
     }
