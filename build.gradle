@@ -5,7 +5,7 @@ plugins {
 
 checkstyle {
     toolVersion = '10.15.0'
-    configFile = file("config/checkstyle/google_checks.xml")
+    configFile = file("config/checkstyle/checkstyle.xml")
 }
 
 java {
