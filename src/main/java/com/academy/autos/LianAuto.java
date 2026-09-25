@@ -12,7 +12,7 @@ public class LianAuto implements Auto {
             // Dice rolled when prime number of rounds
             return RandomService.rangeInclusive(7, 12);
         // Default dice rolled
-        return RandomService.rangeInclusive(1, 6);
+        return RandomService.rangeInclusive(1, 9);
     }
 
     private boolean isPrime(final int n) {
