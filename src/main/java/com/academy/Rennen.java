@@ -22,9 +22,6 @@ public class Rennen {
         this.autos = autos;
     }
 
-    public Auto start(){
-        return start(0);
-    }
     /**
      * Runs the race and prints the winner by their class name
      * after finishing.
