@@ -22,14 +22,22 @@ public class Rennen {
         this.autos = autos;
     }
 
+    public Auto start(){
+        return start(0);
+    }
     /**
      * Runs the race and prints the winner by their class name
      * after finishing.
      * Cars declared earlier in the array will have an advantage over
      * @return winner
      */
-    public Auto start() {
+    public Auto start(int wartezeit) {
+        int runde = 1;
+        Kommentator kommentator = new Kommentator(autos);
+
         while (true) {
+            System.out.println("Runde: " + runde);
+
             for (int i = 0; i < autos.length; i++) {
                 if (autos[i] == null)
                     continue;
@@ -41,6 +49,17 @@ public class Rennen {
                     return autos[i];
                 }
             }
+
+            System.out.println(kommentator.kommentiereErster(positionen));
+            System.out.println(kommentator.kommentiereLetzter(positionen));
+
+            try {
+                Thread.sleep(wartezeit);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            runde++;
         }
     }
 }
