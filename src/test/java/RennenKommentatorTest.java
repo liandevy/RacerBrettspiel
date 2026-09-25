@@ -31,7 +31,7 @@ public class RennenKommentatorTest {
         System.setOut(new PrintStream(output));
 
         try {
-            rennen.start(1000);
+            rennen.start(0);
 
             String ausgabe = output.toString();
 
