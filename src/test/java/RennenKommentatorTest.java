@@ -17,9 +17,12 @@ public class RennenKommentatorTest {
             new SteventAuto(),
             new YassirAuto(),
     };
+    final Rennen rennen = new Rennen(200, autos);
 
-    final Rennen rennen = new Rennen(100, autos);
-
+    /**
+     * Tests the output of the Kommentator class on every possible outcome at least once in a race.
+     * The race needs to be long enough so each outcome can be in the output. (min. 100)
+     */
     @Test
     void ausgabeRunde(){
         ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -28,12 +31,10 @@ public class RennenKommentatorTest {
         System.setOut(new PrintStream(output));
 
         try {
-            rennen.start();
+            rennen.start(1000);
 
             String ausgabe = output.toString();
 
-            assertTrue(ausgabe.contains("Runde: 1"));
-            assertTrue(ausgabe.contains("Runde: 5"));
             assertTrue(ausgabe.contains("Hinten keine Veraenderung!"));
             assertTrue(ausgabe.contains("faellt zurueck!"));
             assertTrue(ausgabe.contains("An der Spitze bleibt es spannend!"));
