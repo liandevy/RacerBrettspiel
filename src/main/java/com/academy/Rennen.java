@@ -34,9 +34,43 @@ public class Rennen {
         int erster = -1;
 
         while (true) {
-            for (int i = 0; i < autos.length; i++) {
-                System.out.println("Runde: " + runde);
+            System.out.println("Runde: " + runde);
 
+            int neuerLetzter = 0;
+
+            for (int x = 1; x < positionen.length; x++) {
+                if (positionen[x] < positionen[neuerLetzter]) {
+                    neuerLetzter = x;
+                }
+            }
+
+            if (neuerLetzter != letzter) {
+                System.out.println(
+                        autos[neuerLetzter].getClass().getSimpleName() + " faellt zurueck!");
+                letzter = neuerLetzter;
+            }
+            else {
+                System.out.println("Hinten keine Veraenderung!");
+            }
+
+            int neuerErster = 0;
+
+            for (int x = 1; x < positionen.length; x++) {
+                if (positionen[x] > positionen[neuerErster]) {
+                    neuerErster = x;
+                }
+            }
+
+            if (neuerErster != erster) {
+                System.out.println(
+                        autos[neuerErster].getClass().getSimpleName() + " hat die Fuehrung uebernommen!");
+                erster = neuerErster;
+            }
+            else {
+                System.out.println("An der Spitze bleibt es spannend!");
+            }
+
+            for (int i = 0; i < autos.length; i++) {
                 if (autos[i] == null)
                     continue;
 
@@ -46,49 +80,15 @@ public class Rennen {
                 if (positionen[i] >= laenge) {
                     return autos[i];
                 }
-
-                int neuerLetzter = 0;
-
-                for (int x = 1; x < positionen.length; x++) {
-                    if (positionen[x] < positionen[neuerLetzter]) {
-                        neuerLetzter = x;
-                    }
-                }
-
-                if (neuerLetzter != letzter) {
-                    System.out.println(
-                        autos[neuerLetzter].getClass().getSimpleName() + " faellt zurueck!");
-                    letzter = neuerLetzter;
-                }
-                else {
-                    System.out.println("Hinten keine Veraenderung!");
-                }
-
-                int neuerErster = 0;
-
-                for (int x = 1; x < positionen.length; x++) {
-                    if (positionen[x] > positionen[neuerErster]) {
-                        neuerErster = x;
-                    }
-                }
-
-                if (neuerErster != erster) {
-                    System.out.println(
-                        autos[neuerErster].getClass().getSimpleName() + " hat die Fuehrung uebernommen!");
-                    erster = neuerErster;
-                }
-                else {
-                    System.out.println("An der Spitze bleibt es spannend!");
-                }
-
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                runde++;
             }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            runde++;
         }
     }
 }
