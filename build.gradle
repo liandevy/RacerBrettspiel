@@ -1,5 +1,17 @@
 plugins {
     id 'java'
+    id 'checkstyle'
+}
+
+checkstyle {
+    configFile = file("config/checkstyle/google_checks.xml")
+    toolVersion = '14.1.0'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(24)
+    }
 }
 
 group = 'com.academy'
